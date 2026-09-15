@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ID Physio — Φυσικοθεραπεία</title>
+<meta name="description" content="ID Physio — κέντρο φυσικοθεραπείας. Εξατομικευμένη αποκατάσταση, θεραπευτική άσκηση, manual therapy.">
+<link rel="icon" href="data:,">
+<style>
+:root{
+  --bg:#ffffff;
+  --ink:#16302b;
+  --muted:#5c6b66;
+  --accent:#0f7a6a;
+  --soft:#eef5f3;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+img{max-width:100%;display:block}
+a{color:var(--accent)}
+.wrap{max-width:var(--max);margin:auto;padding:0 20px}
+h1,h2{line-height:1.2;margin:0 0 .5em}
+h2{font-size:1.6rem}
+section{padding:56px 0;border-top:1px solid var(--soft)}
+
+/* header */
+header{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(6px);border-bottom:1px solid var(--soft);z-index:5}
+header .wrap{display:flex;gap:16px;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;letter-spacing:.04em;font-size:1.25rem;text-decoration:none;color:var(--ink)}
+.logo span{color:var(--accent)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--accent)}
+
+/* hero */
+.hero{background:var(--soft);padding:72px 0}
+.hero p{font-size:1.1rem;color:var(--muted);max-width:60ch}
+.btn{display:inline-block;margin:6px 8px 0 0;padding:12px 20px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn.ghost{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+
+/* generic grid */
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--soft);border-radius:14px;padding:20px}
+.card h3{margin:.2em 0 .4em}
+
+/* team */
+.team figure{margin:0;text-align:center}
+.team img{aspect-ratio:1;object-fit:cover;border-radius:50%;margin:auto;width:180px;height:180px;background:var(--soft)}
+.team figcaption{margin-top:10px}
+.team .role{color:var(--muted);font-size:.9rem}
+
+/* carousel: CSS scroll-snap, no JS */
+.carousel{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:10px}
+.carousel img{flex:0 0 100%;scroll-snap-align:center;border-radius:14px;aspect-ratio:16/10;object-fit:cover;background:var(--soft)}
+@media(min-width:720px){.carousel img{flex-basis:calc(50% - 6px)}}
+.dots{display:flex;gap:10px;justify-content:center;margin-top:12px}
+.dots a{width:10px;height:10px;border-radius:50%;background:#cfdedb}
+
+/* contact + map */
+.contact ul{list-style:none;padding:0;margin:0 0 20px}
+.contact li{margin:.4em 0}
+iframe{width:100%;height:380px;border:0;border-radius:14px}
+
+footer{padding:28px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--soft)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">ID<span>_</span>PHYSIO</a>
+    <nav>
+      <a href="#about">Το όραμά μας</a>
+      <a href="#services">Υπηρεσίες</a>
+      <a href="#space">Ο χώρος</a>
+      <a href="#team">Η ομάδα</a>
+      <a href="#booking">Ραντεβού</a>
+      <a href="#contact">Επικοινωνία</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <h1>ID Physio — Φυσικοθεραπεία &amp; Αποκατάσταση</h1>
+    <p>Εξατομικευμένη θεραπεία, σύγχρονος εξοπλισμός, χρόνος για τον κάθε ασθενή.
+       Σε έναν ήσυχο, καθαρό χώρο, με ραντεβού ένα προς ένα.</p>
+    <a class="btn" href="tel:+302100000000">Κλείσε ραντεβού τηλεφωνικά</a>
+    <a class="btn ghost" href="mailto:info@idphysio.gr?subject=Αίτημα%20ραντεβού">Στείλε email</a>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>Το όραμά μας</h2>
+    <p>Θέλουμε η φυσικοθεραπεία να μη σταματά στον πόνο της στιγμής.
+       Στόχος μας είναι να καταλάβουμε την αιτία, να σχεδιάσουμε πρόγραμμα αποκατάστασης
+       και να σε επιστρέψουμε στη ζωή και στην άθλησή σου δυνατότερο από πριν.</p>
+    <p>Κάθε συνεδρία είναι ατομική. Χωρίς βιασύνη, χωρίς παράλληλα ραντεβού.</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Υπηρεσίες</h2>
+    <div class="grid">
+      <div class="card"><h3>Manual Therapy</h3><p>Κινητοποιήσεις, μυοπεριτονιακές τεχνικές, ανακούφιση πόνου.</p></div>
+      <div class="card"><h3>Θεραπευτική άσκηση</h3><p>Εξατομικευμένο πρόγραμμα ενδυνάμωσης και σταθερότητας.</p></div>
+      <div class="card"><h3>Αθλητική αποκατάσταση</h3><p>Επιστροφή στην αγωνιστική δράση μετά από τραυματισμό.</p></div>
+      <div class="card"><h3>Μετεγχειρητική αποκατάσταση</h3><p>Πρωτόκολλα σε συνεργασία με τον θεράποντα ιατρό.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="space">
+  <div class="wrap">
+    <h2>Ο χώρος μας</h2>
+    <div class="carousel">
+      <img id="s1" src="img/room-1.jpg" alt="Αίθουσα θεραπείας">
+      <img id="s2" src="img/room-2.jpg" alt="Χώρος θεραπευτικής άσκησης">
+      <img id="s3" src="img/room-3.jpg" alt="Εξοπλισμός αποκατάστασης">
+      <img id="s4" src="img/room-4.jpg" alt="Υποδοχή">
+    </div>
+    <div class="dots"><a href="#s1"></a><a href="#s2"></a><a href="#s3"></a><a href="#s4"></a></div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap team">
+    <h2>Η ομάδα</h2>
+    <div class="grid">
+      <figure>
+        <img src="img/physio-1.jpg" alt="Φυσικοθεραπευτής 1">
+        <figcaption><strong>Όνομα Επώνυμο</strong><div class="role">Φυσικοθεραπευτής, MSc Αποκατάστασης</div></figcaption>
+      </figure>
+      <figure>
+        <img src="img/physio-2.jpg" alt="Φυσικοθεραπεύτρια 2">
+        <figcaption><strong>Όνομα Επώνυμο</strong><div class="role">Φυσικοθεραπεύτρια, Αθλητική Αποκατάσταση</div></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="wrap">
+    <h2>Πώς κλείνεις ραντεβού</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Τηλεφωνικά</h3>
+        <p>Κάλεσε <a href="tel:+302100000000">210 000 0000</a>, Δευτέρα–Παρασκευή 09:00–21:00.
+           Πες μας το πρόβλημα και βρίσκουμε την πρώτη διαθέσιμη ώρα.</p>
+      </div>
+      <div class="card">
+        <h3>Με email</h3>
+        <p>Στείλε στο <a href="mailto:info@idphysio.gr?subject=Αίτημα%20ραντεβού">info@idphysio.gr</a>
+           ονοματεπώνυμο, τηλέφωνο, σύντομη περιγραφή και προτιμώμενες ώρες. Απαντάμε εντός της ημέρας.</p>
+      </div>
+      <div class="card">
+        <h3>Τι να φέρεις</h3>
+        <p>Παραπεμπτικό ή γνωμάτευση ιατρού (αν υπάρχει), εξετάσεις απεικόνισης και αθλητικά ρούχα.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <h2>Επικοινωνία</h2>
+    <ul>
+      <li><strong>Διεύθυνση:</strong> Οδός Παράδειγμα 1, Πόλη, ΤΚ</li>
+      <li><strong>Τηλέφωνο:</strong> <a href="tel:+302100000000">210 000 0000</a></li>
+      <li><strong>Email:</strong> <a href="mailto:info@idphysio.gr">info@idphysio.gr</a></li>
+      <li><strong>Ώρες:</strong> Δευτέρα–Παρασκευή 09:00–21:00, Σάββατο με ραντεβού</li>
+    </ul>
+    <!-- Αντικατάστησε τη διεύθυνση στο q= με την πραγματική -->
+    <iframe
+      title="Χάρτης — ID Physio"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://maps.google.com/maps?q=%CE%A0%CE%B1%CF%81%CE%AC%CE%B4%CE%B5%CE%B9%CE%B3%CE%BC%CE%B1%201%2C%20%CE%91%CE%B8%CE%AE%CE%BD%CE%B1&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 ID Physio · Οδός Παράδειγμα 1 · 210 000 0000</div>
+</footer>
+
+</body>
+</html>
